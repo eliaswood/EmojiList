@@ -1,21 +1,24 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import SearchBar from './components/SearchBar';
 import EmojiList from './components/EmojiList';
 
-const emojis = require('node-emoji')
 
 const App = () => {
 
-  onFormSumbit = () => {
-    
+  const [emojiEntry, setEmojiEntry] = useState('a')
+
+
+  const onFormSubmit = (term) => {
+    setEmojiEntry(term)
   }
+
 
 
   return (
     <div>
       <h1>Emoji Search</h1>
-      <SearchBar onFormSubmit={null} />
-      <EmojiList emojis={}/>
+      <SearchBar onFormSubmit={onFormSubmit} updatedTerm={emojiEntry} />
+      <EmojiList emojiEntry={emojiEntry}/>
 
 
     </div>

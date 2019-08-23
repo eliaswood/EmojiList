@@ -1,23 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const SearchBar = (props) => {
-  const [emojiEntry, setEmojiEntry] = useState('')
 
-
-  const onFormSubmit = e => {
-    e.preventDefault()
-
-    props.onFormSubmit(emojiEntry)
-  }
-
+  let term = '';
   return (
     <div>
-      <form onSubmit={onFormSubmit}>
+      <form>
         <input
           type='text'
-          ref={props.emojis}
-          value ={emojiEntry}
-          onChange={e => setEmojiEntry(e)}
+          value ={props.updateTerm}
+          onChange={() => props.onFormSubmit(term)}
           placeholder='Input Emoji'
         />
 
