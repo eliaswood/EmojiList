@@ -5,11 +5,13 @@ import EmojiList from './components/EmojiList';
 
 const App = () => {
 
-  const [emojiEntry, setEmojiEntry] = useState('a')
+  const [emojiEntry, setEmojiEntry] = useState('b')
 
 
   const onFormSubmit = (term) => {
-    setEmojiEntry(term)
+
+    setEmojiEntry(term);
+
   }
 
 

@@ -2,14 +2,13 @@ import React from 'react';
 
 const SearchBar = (props) => {
 
-  let term = '';
   return (
     <div>
       <form>
         <input
           type='text'
-          value ={props.updateTerm}
-          onChange={() => props.onFormSubmit(term)}
+          value ={props.updatedTerm}
+          onChange={() => props.onFormSubmit()}
           placeholder='Input Emoji'
         />
 
