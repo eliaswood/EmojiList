@@ -1,0 +1,50 @@
+.app {
+  background-image: linear-gradient(red, yellow);
+}
+
+.search-bar {
+  align-content: center;
+  width: 80%;
+  display: block;
+  padding: 12px 20px;
+  margin: 0 auto;
+}
+
+.list {
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-left: none;
+  border-right: none;
+  border-color: lightgrey;
+  padding: 12px 20px;
+  margin: 2px 0;
+}
+
+.title {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.emoji-box {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.emoji-box-title {
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+.copy-button {
+  border-radius: 4px;
+}
+
+.copybutton:hover {
+  background-color: darkgrey;
+
+}
