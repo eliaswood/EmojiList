@@ -1,5 +1,5 @@
 import React from 'react';
-import EmojiBar from '../emojiItem/EmojiItem';
+import EmojiItem from '../emojiItem/EmojiItem';
 import data from '../../emojis.json';
 import useStyles from "./EmojiList.styles"
 
@@ -20,7 +20,7 @@ const EmojiList = ({emojiEntry}) => {
 
   const list = search.map(emo => {
     return (
-      <EmojiBar
+      <EmojiItem
         key={emo.name}
         emoji={emo.symbol}
         title={emo.title}

@@ -13,6 +13,10 @@
 	padding-right: 20px;
 }
 
+.background {
+	background-color: "#f8f8f8";
+}
+
 .emoji-box-title {
 	font-family: sans-serif;
 	text-align: center;

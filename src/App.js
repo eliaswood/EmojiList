@@ -12,7 +12,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className='background'>
       <Typography variant="h2" className='title'>Emoji Search</Typography>
       <SearchBar
         onFormSubmit={onFormSubmit} updatedTerm={emojiEntry}
