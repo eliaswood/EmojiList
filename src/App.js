@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
-import SearchBar from './components/SearchBar';
-import EmojiList from './components/EmojiList';
+import React, { useState } from 'react';
+import { Typography } from "@material-ui/core";
+import SearchBar from './components/searchBar/SearchBar';
+import EmojiList from './components/emojiList/EmojiList';
 import './app.css'
 
 const App = () => {
-  const [emojiEntry, setEmojiEntry] = useState('b')
+  const [emojiEntry, setEmojiEntry] = useState('')
 
   const onFormSubmit = (e, term) => {
     setEmojiEntry(e.target.value);
   }
 
   return (
-    <div >
-      <h1 className='title'>Emoji Search</h1>
+    <div>
+      <Typography variant="h2" className='title'>Emoji Search</Typography>
       <SearchBar
         onFormSubmit={onFormSubmit} updatedTerm={emojiEntry}
       />
